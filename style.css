@@ -1,0 +1,123 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background: #060e30;
+    /* background:  linear-gradient(135deg, #0C0032 0%,#29029c 50%,#150052 100%); */
+    height: 1000px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+ #holder{
+    border: 2px solid red;
+}
+
+#message_holder{
+    color:#F9F9FB;
+    /* border: 2px solid rgb(30, 255, 0); */
+    /* height: 900px; */
+    padding: 10px;
+    width: 95%;
+    padding: 10px;
+    text-align: center;
+    margin:0 auto;
+}
+
+
+#text_send{
+    /* margin-top:40%;  */
+    position: fixed;
+    bottom:0%;
+    width: 100%;
+    /* border: 2px solid rgb(0, 255, 13); */
+    display: block;
+    background:  linear-gradient(135deg, #2901a1 0%,#1e0077 50%,#120047 100%);
+    box-shadow: 0px 10px 25px rgba(95, 51, 255, 0.4);
+}
+
+input{
+    float: left;
+    font-size: 16pt;
+    padding: 20px;
+    width:68%;
+    border: none;
+    color: #F9F9FB;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#button{
+    margin-right:25px; 
+    float:right;
+    border: none;
+    height: 65px;
+    font-size: 12pt;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(175, 148, 253);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#button:hover{
+    color: rgb(220, 209, 255); 
+
+}
+
+
+#you{
+    margin: 25px 10px;
+    color:white;
+    border: 2px solid rgb(58, 23, 255);
+    box-shadow: #2901a1 5px 5px 10px;
+    padding: 20px;
+    border-radius: 20px;
+    background:  linear-gradient(135deg, #1f007a 0%,rgb(52, 2, 201) 100%);
+    list-style: none;
+    font-optical-sizing: 1;
+    width: 310px;
+    transition: 0.3s;
+}
+#him{
+    margin:25px;
+    margin-left:60%;
+    color:white;
+    /* display: block; */
+    border: 2px solid rgb(255, 135, 23);
+    box-shadow: #a15c01 5px 5px 10px;
+    padding: 20px;
+    border-radius: 20px;
+    background:  linear-gradient(135deg, #7a2d00 0%,rgb(196, 93, 34) 100%);
+    list-style: none;
+    font-optical-sizing: 1;
+    width: 310px;
+    transition: 0.3s;
+}
+/* 
+
+/* 
+#0C0032
+#190061 Green 
+#240090
+#3500D3
+#282828
+
+*/
+
+
+
+/* making #him id responsive so it looks nice in every type of displays;  */
+@media (min-device-width:320px) and (max-device-width:768px) {
+    #him {
+    margin: 25px 8px;
+    }
+}
+
+@media (min-width:1281px) { 
+    #him {
+        margin: 25px 80%;
+    }
+}

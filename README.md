@@ -1,2 +1,15 @@
-# Chatapp101
-this is a chat app i am working to learn firebase and database, contents of this projects can be used for educational purposes only - Aayush Pokharel
+Projects
+
+-I'll start with a messaging app (alpha project)
+	Using Vanilla_Js and Css for frontEnd || firebase for backend
+
+
+
+Progress made : 2/10 
+
+
+
+
+Here's my site
+
+www.writecode.me
