@@ -22,36 +22,30 @@ refrence = database.ref('messages');
 refrence.on('value', gotData, errData);
 
 
-
-
-
-
 function gotData(data){
     let datas = data.val(); 
     let keys = Object.keys(datas)
 
     for (key of keys){
-
         let k = key;
         let users = datas[key].user;
         let msg = datas[key].message;
-        console.log(users, msg +':  '+ k);
-         var btn = document.createElement("li");
+        // console.log(users, msg +':  '+ k);
+         var li = document.createElement("li");
          if (users == '1'){
-            btn.setAttribute("id", "you");
+            li.setAttribute("id", "you");
          }else {
-            btn.setAttribute("id", "him");
+            li.setAttribute("id", "him");
          }
-         btn.innerHTML = msg;
-        document.body.appendChild(btn);
+         li.innerHTML = msg;
+        document.body.appendChild(li);
     }
 }
 
 
-
 function errData(error){
-console.log('error');
-console.error(error);
+    console.log('error');
+    console.error(error);
 }
 
 
@@ -59,7 +53,7 @@ function send(){
     message = document.getElementById('message').value;
     // alert(message);
     generateObj(message, user);
-    location.reload();                           // find a better way of removing element
+    location.reload();                      // find a better way of removing element
 }
 
 
