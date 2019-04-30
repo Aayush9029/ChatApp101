@@ -69,7 +69,7 @@ input{
 }
 
 
-#you{
+#one{
     margin: 25px 10px;
     color:white;
     border: 2px solid rgb(58, 23, 255);
@@ -82,7 +82,7 @@ input{
     width: 310px;
     transition: 0.3s;
 }
-#him{
+#two{
     margin:25px;
     margin-left:60%;
     color:white;
@@ -92,6 +92,22 @@ input{
     padding: 20px;
     border-radius: 20px;
     background:  linear-gradient(135deg, #7a2d00 0%,rgb(196, 93, 34) 100%);
+    list-style: none;
+    font-optical-sizing: 1;
+    width: 310px;
+    transition: 0.3s;
+}
+
+#three{
+    margin:25px;
+    margin-left:60%;
+    color:white;
+    /* display: block; */
+    border: 2px solid rgb(23, 255, 54);
+    box-shadow: #34a101 5px 5px 10px;
+    padding: 20px;
+    border-radius: 20px;
+    background:  linear-gradient(135deg, #2d7a00 0%,rgb(112, 196, 34) 100%);
     list-style: none;
     font-optical-sizing: 1;
     width: 310px;

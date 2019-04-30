@@ -5,7 +5,7 @@ let database;
 let num;
 
 
-user = prompt('select user 1 or 2');
+user = prompt('select user 1, 2 or 3');
 // user = '0'
 
  // Initialize Firebase
@@ -35,9 +35,12 @@ function gotData(data){
         console.log(users, msg +':  '+ k);
          var li = document.createElement("li");
          if (users == '1'){
-            li.setAttribute("id", "you");
-         }else {
-            li.setAttribute("id", "him");
+            li.setAttribute("id", "one");
+         }else if (users =='2') {
+            li.setAttribute("id", "two");
+         }else{
+            li.setAttribute("id", "three");
+
          }
          li.innerHTML = msg;
         document.body.appendChild(li);
