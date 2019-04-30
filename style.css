@@ -12,8 +12,7 @@ body{
     overflow-x: hidden;
 }
 
-
- #holder{
+#holder{
     border: 2px solid red;
 }
 
@@ -81,7 +80,9 @@ input{
     font-optical-sizing: 1;
     width: 310px;
     transition: 0.3s;
+    
 }
+
 #two{
     margin:25px;
     margin-left:60%;
@@ -128,16 +129,28 @@ input{
 
 /* making #him id responsive so it looks nice in every type of displays;  */
 @media (min-device-width:320px) and (max-device-width:768px) {
-    #him {
+    #two {
+    margin: 25px 8px;
+    }
+    #one {
+    margin: 25px 8px;
+    }
+    #three {
     margin: 25px 8px;
     }
 }
 
 @media (min-width:1281px) { 
-    #him {
-        margin: 25px 78%;
+    #two {
+        margin: 25px 20%;
+        width: 60%;
     }
-    #you {
-        margin: 25px 2%;
+    #three {
+        margin: 25px 20%;
+        width: 60%;
+    }
+    #one {
+        margin: 25px 20%;
+        width: 60%;
     }
 }
