@@ -1,4 +1,4 @@
-let refrence;
+let reference;
 let message;
 let user;
 let database;
@@ -6,7 +6,7 @@ let num;
 
 
 user = prompt('select user 1 or 2');
-user = '0'
+// user = '0'
 
  // Initialize Firebase
 var config = {
@@ -19,8 +19,8 @@ var config = {
 };
 firebase.initializeApp(config);
 database = firebase.database();
-refrence = database.ref('messages');
-refrence.on('value', gotData, errData);
+reference = database.ref('messages');
+reference.on('value', gotData, errData);
 
 
 function gotData(data){
@@ -65,7 +65,7 @@ function generateObj(message, user){
         message: message,
         user: user
     }
-    refrence.push(obj)
+    reference.push(obj)
 }
 
 
