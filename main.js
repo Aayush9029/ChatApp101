@@ -6,6 +6,7 @@ let num;
 
 
 user = prompt('select user 1 or 2');
+user = '0'
 
  // Initialize Firebase
 var config = {
@@ -23,6 +24,7 @@ refrence.on('value', gotData, errData);
 
 
 function gotData(data){
+    clearStuff();
     let datas = data.val(); 
     let keys = Object.keys(datas)
 
@@ -30,7 +32,7 @@ function gotData(data){
         let k = key;
         let users = datas[key].user;
         let msg = datas[key].message;
-        // console.log(users, msg +':  '+ k);
+        console.log(users, msg +':  '+ k);
          var li = document.createElement("li");
          if (users == '1'){
             li.setAttribute("id", "you");
@@ -50,10 +52,11 @@ function errData(error){
 
 
 function send(){
+    // clearStuff();
     message = document.getElementById('message').value;
     // alert(message);
     generateObj(message, user);
-    location.reload();                      // find a better way of removing element
+    // location.reload();                      // find a better way of removing element
 }
 
 
@@ -65,3 +68,11 @@ function generateObj(message, user){
     refrence.push(obj)
 }
 
+
+
+function clearStuff(){
+    let myStuff = document.getElementsByTagName('li');
+    for (let i = 0; i < myStuff.length; i++){
+        myStuff[i].style.display= 'none';
+    }
+}
