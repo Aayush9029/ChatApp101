@@ -120,3 +120,41 @@ input{
 }
 
 
+#nav{
+    background-color: rgba(255, 255, 255, 0.123);   
+    padding: 5px;
+    text-align: center; 
+    font-size: 14pt;
+}
+
+
+.bye{
+    background: none;
+    border: none;
+    transition: 0.3s;
+}
+
+.bye:hover, .share:hover,.feedback:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    text-decoration: underline; 
+
+}
+.share{
+    color:rgb(174, 0, 255);
+    background: none;
+    border: none;
+    margin-left:20px; 
+    transition: 0.3s;    
+}
+
+
+.feedback{
+    color:rgb(0, 255, 85);
+    background: none;
+    border: none;
+    margin-left:20px;
+    transition: 0.3s;
+    
+}
+
