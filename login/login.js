@@ -33,7 +33,6 @@ function login(){
 // Add a realtime Listner for user data
 firebase.auth().onAuthStateChanged(firebaseUser => {
   if(firebaseUser){
-    window.location.assign("https://aayush9029.github.io/Chatapp101/");
     document.getElementById('youin').style.display = 'block'
     document.getElementById('info').style.display = 'none'
   }
@@ -52,3 +51,9 @@ function logoOut(){
 
 
 
+
+
+function link(){
+  window.location.assign("https://aayush9029.github.io/Chatapp101/");
+
+}

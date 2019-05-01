@@ -3,13 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>login</title>
+    <script src="https://www.gstatic.com/firebasejs/5.11.0/firebase.js"></script>
+    <script src="login/login.js"></script>
+    <link rel = 'stylesheet' href = 'login/login.css'>
 </head>
 <body>
-    <script>
-        window.location.assign("https://aayush9029.github.io/login/login.html");
-    </script>
-    
+        <div class='bold-line'></div>
+        <div class='container'>
+          <div class='window'>
+            <div class='overlay'></div>
+            <div class='content'>
+              <div id = 'info'>
+                <div class='welcome'>Welcome Back!</div>
+                <div class='subtitle'>Glad to see you again :)</div>
+                <div class='input-fields'>
+                  <input id = 'email' type='email' placeholder='Email' class='input-line full-width'></input>
+                  <input id = 'password' type='password' placeholder='Password' class='input-line full-width'></input>
+                </div>
+                <div class='spacing'>Don't Have an account?  <a href='login/signup.html' class='highlight'>Signup</a></div>
+              <div><button onclick="login()" class='ghost-round full-width'>Login</button></div>
+            </div>
+            <div id = 'youin'>
+              <div class = 'youinText'>Glad to See you again!</div>
+              <button onclick="logoOut()" id='ghost-round2'>Logout</button>
+              <button onclick="link()" id='ghost-round2'>gotoApp</button>
+            </div>
+          </div>
+          </div>
+        </div>
 </body>
 </html>
