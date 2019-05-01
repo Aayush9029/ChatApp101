@@ -3,6 +3,9 @@ let message;
 let user;
 let database;
 let num;
+let holder;
+
+
 
 
 user = prompt('select user 1, 2 or 3');
@@ -32,7 +35,7 @@ function gotData(data){
         let k = key;
         let users = datas[key].user;
         let msg = datas[key].message;
-        console.log(users, msg +':  '+ k);
+        // console.log(users, msg +':  '+ k);
          var li = document.createElement("li");
          if (users == '1'){
             li.setAttribute("id", "one");
@@ -40,10 +43,9 @@ function gotData(data){
             li.setAttribute("id", "two");
          }else{
             li.setAttribute("id", "three");
-
          }
          li.innerHTML = msg;
-        document.body.appendChild(li);
+        document.getElementById('message_holder').appendChild(li);
     }
 }
 
@@ -55,12 +57,13 @@ function errData(error){
 
 
 function send(){
-    // clearStuff();
     message = document.getElementById('message').value;
     // alert(message);
     generateObj(message, user);
-    // location.reload();                      // find a better way of removing element
+    document.getElementById('message').value = ''  //this removes the text in the box
 }
+
+
 
 
 function generateObj(message, user){
@@ -79,3 +82,12 @@ function clearStuff(){
         myStuff[i].style.display= 'none';
     }
 }
+
+
+document.addEventListener('keydown', logKey);
+
+function logKey(e) {
+    if (e.code === 'Enter'){
+        send();
+    }
+  }
