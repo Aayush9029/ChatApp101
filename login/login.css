@@ -3,6 +3,7 @@ body,
 html {
   margin: 0;
   height: 100%;
+  overflow: hidden;
 }
 
 input {
@@ -244,7 +245,11 @@ button:focus {
     height: 100%;
   }
   .overlay {
-    width: 100%;
+    width: 130%;
     height: 100%;
+  }
+  .content {
+    width: 110%;
+  
   }
 }
