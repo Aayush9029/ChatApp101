@@ -8,8 +8,8 @@ let holder;
 
 
 
-// user = prompt('select user 1, 2 or 3');
-user = '2'
+user = prompt('select user 1, 2 or 3');
+// user = '2'
 
  // Initialize Firebase
 var config = {
