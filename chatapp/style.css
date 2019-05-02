@@ -16,6 +16,7 @@ body{
     overflow-y: auto;
     overflow-x: hidden;
     color:#F9F9FB;
+    align-content: center;
     /* border: 2px solid rgb(30, 255, 0); */
     height: 75%;
     padding: 20px;
@@ -99,15 +100,11 @@ input{
     background:  linear-gradient(135deg, #2d7a00 0%,rgb(112, 196, 34) 100%);
 }
 
-@media (min-device-width:320px) and (max-device-width:768px) {
-    #two {
-    margin: 15px -15px;
-    }
-    #one {
-    margin: 15px -15px;
-    }
-    #three {
-    margin: 15px -15px;
+@media (min-device-width:320px) and (max-device-width:768px) { /*for phones*/
+    #one,#two,#three {
+        margin: 15px -5px;
+        padding: 10px;
+        border-radius:6px; 
     }
 }
 
@@ -123,6 +120,7 @@ input{
 #nav{
     background-color: rgba(255, 255, 255, 0.123);   
     padding: 5px;
+    width: 100%;
     text-align: center; 
     font-size: 14pt;
 }
