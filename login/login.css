@@ -4,6 +4,8 @@ html {
   margin: 0;
   height: 100%;
   overflow: hidden;
+  /* background:#b8235a;  */
+
 }
 
 input {
@@ -203,12 +205,11 @@ button:focus {
   -webkit-flex-flow: column;
   -ms-flex-flow: column;
   flex-flow: column;
-  box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
   height: 560px;
   width: 360px;
   background: #fff;
-  background: url('https://pexels.imgix.net/photos/27718/pexels-photo-27718.jpg?fit=crop&w=1280&h=823') top left no-repeat;
 }
 
 .overlay {
@@ -224,6 +225,7 @@ button:focus {
 #youin{
   display: none;
 }
+
 .bold-line {
   background: #e7e7e7;
   position: absolute;
@@ -251,6 +253,5 @@ button:focus {
   }
   .content {
     width: 110%;
-  
   }
 }

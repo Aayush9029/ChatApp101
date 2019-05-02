@@ -49,10 +49,6 @@ function logoOut(){
 
 
 
-
-
-
-
 function link(){
   window.location.assign("https://aayush9029.github.io/Chatapp101/");
 
