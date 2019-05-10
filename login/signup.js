@@ -32,7 +32,8 @@ function signup(){
 function checkpass(email, password, confirm_password){
     if (password == confirm_password){
         auth.createUserWithEmailAndPassword(email, password);
-        console.log('done')
+        alert('done');
+        
     }
     else{
         alert("password didn't match")

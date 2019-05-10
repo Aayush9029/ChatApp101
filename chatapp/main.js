@@ -28,11 +28,10 @@ reference.on('value', gotData, errData);
 
 function gotData(data){
     clearStuff();
-    let datas = data.val(); 
+    let datas = data.val();
     let keys = Object.keys(datas)
 
     for (key of keys){
-        let k = key;
         let users = datas[key].user;
         let msg = datas[key].message;
         // console.log(users, msg +':  '+ k);
