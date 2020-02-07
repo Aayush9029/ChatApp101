@@ -6,17 +6,14 @@
 
 > Login Image
 
-![Login for the chatSite]
-(https://github.com/Aayush9029/Chatapp101/READEME_Images/login.png)
+![Login for the chatSite](https://github.com/Aayush9029/Chatapp101/READEME_Images/login.png)
 
 
 > Chat App Minimized View
 
-![Login for the chatSite]
-(https://github.com/Aayush9029/Chatapp101/READEME_Images/chat.png)
+![Login for the chatSite](https://github.com/Aayush9029/Chatapp101/READEME_Images/chat.png)
 
 > Chat App maximized view
 
-![Login for the chatSite]
-(https://github.com/Aayush9029/Chatapp101/READEME_Images/fullScreenchat.png)
+![Login for the chatSite](https://github.com/Aayush9029/Chatapp101/READEME_Images/fullScreenchat.png)
 
