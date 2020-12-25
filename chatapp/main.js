@@ -7,7 +7,7 @@ let holder;
 
 user = prompt("select user 1, 2 or 3");
 // user = '2'
-
+//
 // Initialize Firebase
 var config = {
   apiKey: "AIzaSyBtsior_IVgmnrEhheVr42jfyxbjaMK5ek",
@@ -15,7 +15,7 @@ var config = {
   databaseURL: "https://newdataset-f1233.firebaseio.com",
   projectId: "newdataset-f1233",
   storageBucket: "newdataset-f1233.appspot.com",
-  messagingSenderId: "536828636058"
+  messagingSenderId: "536828636058",
 };
 firebase.initializeApp(config);
 database = firebase.database();
@@ -59,7 +59,7 @@ function send() {
 function generateObj(message, user) {
   let obj = {
     message: message,
-    user: user
+    user: user,
   };
   reference.push(obj);
 }

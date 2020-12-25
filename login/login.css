@@ -64,7 +64,7 @@ button:focus {
   -webkit-align-self: flex-end;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  font-size: 19px;
+  font-size: 24px;
   font-size: 1.2rem;
   font-family: roboto;
   font-weight: 300;
@@ -159,7 +159,7 @@ button:focus {
 }
 
 .welcome {
-  font-weight: 200;
+  font-weight: 300;
   margin-top: 75px;
   text-align: center;
   font-size: 40px;
@@ -169,7 +169,7 @@ button:focus {
 }
 
 .youinText{
-  font-weight: 200;
+  font-weight: 00;
   margin-top: 75px;
   text-align: center;
   font-size: 40px;
